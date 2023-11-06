@@ -4,7 +4,6 @@ Test goes here
 """
 
 import os
-import pytest
 from mylib.lib import (
     extract
 )
