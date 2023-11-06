@@ -3,8 +3,15 @@ Test goes here
 
 """
 
-from mylib.calculator import add
+import os
+import pytest
+from mylib.lib import (
+    extract
+)
 
+def test_extract():
+    file_path = extract()
+    assert os.path.exists(file_path) is True
 
-def test_add():
-    assert add(1, 2) == 3
+if __name__ == "__main__":
+    test_extract()
